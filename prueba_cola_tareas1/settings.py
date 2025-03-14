@@ -41,11 +41,13 @@ INSTALLED_APPS = [
     'django_celery_beat',
     'django_celery_results',
     'facturacion',
+    'simple_history', #nuevo
 ]
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
+    'simple_history.middleware.HistoryRequestMiddleware', #nuevo
     'django.middleware.common.CommonMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
     'django.contrib.auth.middleware.AuthenticationMiddleware',

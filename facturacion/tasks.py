@@ -11,5 +11,4 @@ def scheduled_task():
 def add(n):
     time.sleep(10)
     print("Sumando................................")
-    return Response({"message": "Tarea ejecutada desde la Vista!"}, status=200)
-    
+    return 5
